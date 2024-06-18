@@ -1,4 +1,4 @@
-export default function read() {
+export default async function read() {
     return new Promise((resolve) => {
       // эмуляция чтения файла
       setTimeout(() => {

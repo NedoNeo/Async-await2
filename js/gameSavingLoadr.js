@@ -6,7 +6,7 @@ export default class GameSavingLoader {
             const result = await read();
             return JSON.parse(await json(result));
         } catch (error) {
-            console.log(error);
+            throw error;
         }
 }
 }
